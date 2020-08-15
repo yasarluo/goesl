@@ -58,7 +58,7 @@ func (c *Client) Authenticate() error {
 		return err
 	}
 
-	Debug("A: %v\n", cmr)
+	//Debug("A: %v\n", cmr)
 
 	if cmr.Get("Content-Type") != "auth/request" {
 		Error(EUnexpectedAuthHeader, cmr.Get("Content-Type"))
